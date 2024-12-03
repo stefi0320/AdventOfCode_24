@@ -19,7 +19,6 @@ proc customCheck(nums: seq[int]): bool =
 
 proc Day2() =
     let time = cpuTime()
-# Part  1
     var safe = 0
     var unsafe = 0
     var safe2 = 0
