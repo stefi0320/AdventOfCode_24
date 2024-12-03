@@ -23,8 +23,6 @@ proc Day2() =
     var safe = 0
     var unsafe = 0
     for line in lines "H:/AdventOfCode_24/Day2/input.txt":
-        var dampen = 0
-        var montonity = 0 #0: dec, 1: inc, 2:no change
         let temp = collect(newseq):
             for val in split(line):
                 parseInt(val)
@@ -40,8 +38,6 @@ proc Day2() =
     safe = 0
     unsafe = 0
     for line in lines "H:/AdventOfCode_24/Day2/input.txt":
-        var dampen = 0
-        var montonity = 0 #0: dec, 1: inc, 2:no change
         let temp = collect(newseq):
             for val in split(line):
                 parseInt(val)
