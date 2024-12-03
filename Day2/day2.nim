@@ -22,33 +22,25 @@ proc Day2() =
 # Part  1
     var safe = 0
     var unsafe = 0
+    var safe2 = 0
+    var unsafe2 = 0
     for line in lines "H:/AdventOfCode_24/Day2/input.txt":
         let temp = collect(newseq):
             for val in split(line):
                 parseInt(val)
-
+        # Part  1
         if checkNums(temp) == true:
             safe += 1
         else:
-            unsafe += 1
-
-    echo "safe: ", safe, ", unsafe: ", unsafe
-
-#Part 2
-    safe = 0
-    unsafe = 0
-    for line in lines "H:/AdventOfCode_24/Day2/input.txt":
-        let temp = collect(newseq):
-            for val in split(line):
-                parseInt(val)
-
+            unsafe += 1       
+        #Part 2
         if customCheck(temp) == true:
-            safe += 1
+            safe2 += 1
         else:
-            unsafe += 1
+            unsafe2 += 1
 
     echo "safe: ", safe, ", unsafe: ", unsafe
-
+    echo "dampened safe: ", safe2, ", unsafe: ", unsafe2
     echo "Time taken: ", cpuTime() - time, " seconds"
 
 Day2() 
