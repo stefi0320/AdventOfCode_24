@@ -35,8 +35,8 @@ def blinker(stones, maximum):
         sum_part += (blink(stone, 1, 0, maximum))
     return sum_part
 
-def day10():
-    """Day 10 of Advent of code """
+def day11():
+    """Day 11 of Advent of code """
     # record start time
     start = time.time()
     
@@ -44,11 +44,11 @@ def day10():
     stones = input_txt[0].split(' ')
     #part1
     print(blinker(stones, 25))
-
+    #part2
     print(blinker(stones, 75))
 
     # record end time
     end = time.time()
     print("Runtime :", (end-start) * 10**3, "ms")
 
-day10()
+day11()
