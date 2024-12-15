@@ -22,7 +22,7 @@ def open_file_safely(file_name):
             "The file '{file_name}' was not found in the same directory as the script.")
         return None
     
-def solveEquation(machine):
+def solve_coast(machine):
     res_a = ((machine.res.X * machine.B.Y) - (machine.res.Y * machine.B.X)) / ((machine.A.X * machine.B.Y)- (machine.A.Y * machine.B.X))
     res_b = ((machine.res.Y * machine.A.X) - (machine.res.X * machine.A.Y)) / ((machine.A.X * machine.B.Y)- (machine.A.Y * machine.B.X))
     if res_a.is_integer() and res_b.is_integer():
@@ -47,12 +47,12 @@ def day13():
     sum_pt1, sum_pt2 = 0, 0
     
     for machine in slot_machine: 
-        sum_pt1 += solveEquation(machine)
+        sum_pt1 += solve_coast(machine)
     
     print(sum_pt1)
     #part2
     for machine in slot_machine: 
-        sum_pt2 += solveEquation(Machine(machine.A, machine.B, Point(machine.res.X+ 10000000000000,  machine.res.Y+10000000000000)))
+        sum_pt2 += solve_coast(Machine(machine.A, machine.B, Point(machine.res.X+ 10000000000000,  machine.res.Y+10000000000000)))
     
     print(sum_pt2)
     
