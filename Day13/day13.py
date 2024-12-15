@@ -1,7 +1,6 @@
 """Module providing a function reading files."""
 from pathlib import Path
 import time
-import sys
 from collections import namedtuple
     
 Point = namedtuple('point', 'X, Y')
