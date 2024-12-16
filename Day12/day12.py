@@ -1,9 +1,8 @@
 """Module providing a function reading files."""
 from pathlib import Path
 import time
-import numpy as np
 from typing import TypeAlias
-from collections.abc import Iterable, Iterator
+import numpy as np
 
 Vector: TypeAlias = tuple[int, int]
 OFFSETS: tuple[Vector, ...] = ((0, -1), (0, 1), (-1, 0), (1, 0))

@@ -188,8 +188,8 @@ def part2(input_txt):
                 sum_pt += 100 * i + id0
     print(sum_pt)
 
-def day14():
-    """Day 14 of Advent of code """
+def day15():
+    """Day 15 of Advent of code """
     # record start time
     start = time.time()  
     input_txt = open_file_safely("input.txt")
@@ -201,4 +201,4 @@ def day14():
     end = time.time()
     print("Runtime :", (end-start) * 10**3, "ms")
 
-day14()
+day15()
