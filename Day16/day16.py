@@ -138,7 +138,7 @@ def open_file_safely(file_name):
         return None
 
 def day16():
-    """Day 15 of Advent of code """
+    """Day 16 of Advent of code """
     # record start time
     start = time.time()  
     input_txt = open_file_safely("input.txt")
