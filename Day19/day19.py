@@ -1,7 +1,6 @@
 """Module providing a function reading files."""
 from pathlib import Path
 import time
-from functools import cache
 
 def open_file_safely(file_name):
     """ File open """

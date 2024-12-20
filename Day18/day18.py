@@ -53,7 +53,6 @@ class Grid:
     def shortest_path(self, start) -> list[tuple[int, int]]:
         visited = set()
         heapq.heappush(self.queue,Node(pos=start, direction='R', cost = 0))
-        # Locate the goal ('E') in the grid
         goal = (self.height-1, self.width-1)
 
         while self.queue:
